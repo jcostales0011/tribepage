@@ -1,0 +1,221 @@
+body {
+    margin:0;
+    padding: 0;
+    font-family: 'Rubik Light', Arial, sans-serif;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 25.6px;
+    word-break: break-all;
+    white-space: normal;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-weight: 400;
+   
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 400;
+    letter-spacing: 14px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.for-banner {
+    border: 0;
+    border-radius: 25px;
+    background-color: #fff;
+    color: rgb(248, 72, 196);
+    text-transform: uppercase;
+    padding: 12px 25px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+.row {
+    max-width: 1024px;
+    margin:0 auto;
+    width: 100%;
+    display: flex;
+    padding: 100px 0;
+    color: #000;
+    align-items: center;
+}
+
+.cta-buttons {
+    border: 2px solid rgb(248,72,196);
+    background-color: #fff;
+    color: #f848c4;
+    padding: 10px 25px;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.cta-buttons:hover {
+    background-color: #f848c4;
+    color: #fff;
+}
+
+.cta-button {
+    font-size: 20px;
+    border: solid 1px #f848c4;
+    padding: 7px 26px;
+    letter-spacing: 3px;
+    background-color: #f848c4;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.header-banner {
+    background-image: url('https://offers.tribegroup.co/hubfs/AALandingPages/Creator%20-%20Content%20Only/kuan-fang-254086-unsplash-edit-8.jpg?t=1534383754512');
+}
+
+.header-banner .overlay {
+    background: linear-gradient(to right,rgba(248,72,196,.8),rgba(248,72,196,.8));
+    background: -webkit-linear-gradient(to left,rgba(248,72,196,.8),rgba(248,72,196,.8));
+    background: rgba(248,72,196,.8);
+}
+.header-banner  .header-banner-content img {
+    max-height: 50px;
+}
+.header-banner  .header-banner-content .header-banner-details {
+    margin-right: 50px;
+    color: #fff;
+}
+.header-banner  .header-banner-content .header-banner-details h2{
+    font-weight: 400;
+}
+
+.banner {
+    background-color: #F9F9F9;
+}
+.banner .image-placeholder,
+.banner .banner-details {
+    width: 50%;
+}
+.banner .image-placeholder {
+    display: block;
+}
+.banner .image-placeholder img {
+    width: 100%;
+}
+.banner .banner-details,
+.contents .row .content-row .content-details {
+    margin-left: 50px;
+}
+
+.contents .row {
+    flex-direction: column;
+}
+
+.contents .row .content-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.contents .row .content-row:last-child{
+    margin-bottom: 0;
+}
+.contents .row .content-row h3 {
+    font-weight: 400;
+    letter-spacing: 14px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.contents .row .content-row .image-container,
+.contents .row .content-row .content-details {
+    width: 50%;
+}
+.contents .row .content-row .image-container {
+    height: 275px;
+    width: 486px;
+    background-color: #E0E0E0;
+}
+.contents .row .content-row .content-details {
+    text-align: center;
+}
+.contents .row .content-row .content-details a {
+    color: #f848c4;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.case-studies .row {
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    padding-top: 0;
+}
+.case-studies .row h3 {
+    margin-bottom: 50px;
+}
+.case-studies .case-study .case-mobile-image {
+    display: none;
+}
+.case-studies .image-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.case-studies .case-study {
+    width: 20%;
+    height: 219px;
+    position: relative;
+}
+.case-studies .case-study img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.case-studies .case-study .case-logo {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+.camapaign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #F9F9F9;
+    font-size: 12px;
+    color: #666;
+}
+
+@media screen and (max-width: 767px) {
+    .row, .contents .content-row {
+        flex-wrap: wrap;
+    }
+}
