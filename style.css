@@ -1,7 +1,9 @@
-body {
+html, body {
     margin:0;
     padding: 0;
     font-family: 'Rubik Light', Arial, sans-serif;
+    width: 100%;
+    overflow-x: hidden; 
 }
 
 a {
@@ -36,6 +38,12 @@ h3 {
     font-size: 20px;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .for-banner {
     border: 0;
     border-radius: 25px;
@@ -46,7 +54,7 @@ h3 {
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 2px;
-    margin-top: 15px;
+    margin: 15px auto auto;
 }
 
 .row {
@@ -54,7 +62,7 @@ h3 {
     margin:0 auto;
     width: 100%;
     display: flex;
-    padding: 100px 0;
+    padding: 50px 0;
     color: #000;
     align-items: center;
 }
@@ -90,6 +98,10 @@ h3 {
     font-weight: 400;
 }
 
+.hide-desktop {
+    display: none;
+}
+
 .header-banner {
     background-image: url('https://offers.tribegroup.co/hubfs/AALandingPages/Creator%20-%20Content%20Only/kuan-fang-254086-unsplash-edit-8.jpg?t=1534383754512');
 }
@@ -108,6 +120,13 @@ h3 {
 }
 .header-banner  .header-banner-content .header-banner-details h2{
     font-weight: 400;
+}
+
+.header-banner .banner-video iframe {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        display: block;
 }
 
 .banner {
@@ -145,6 +164,7 @@ h3 {
     letter-spacing: 14px;
     text-transform: uppercase;
     font-size: 20px;
+    text-align: center;
 }
 .contents .row .content-row .image-container,
 .contents .row .content-row .content-details {
@@ -194,13 +214,16 @@ h3 {
 .case-studies .case-study .case-logo {
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    height: fit-content;
 }
 
-.camapaign {
+.campaign {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 32px 0;
 }
 
 .footer {
@@ -208,14 +231,94 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
     background-color: #F9F9F9;
     font-size: 12px;
     color: #666;
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (min-width: 1024px) {
+    .contents, .banner, .overlay {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
+    .show-mobile {
+        display: block;
+    }
+    .header-banner .header-banner-content .header-banner-details {
+        margin: 0 0 50px 0;
+        padding: 0 32px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-banner .banner-video,
+    .header-banner .banner-video iframe {
+        width: 100%;
+    }
+    .banner .banner-details,
+    .contents .row .content-row .content-details {
+        width: 100%;
+        margin: 0;
+        padding: 0 32px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row.header-banner-content {
+        padding-bottom: 0;
+    }
+
+    .banner .row,
+    .contents .row {
+        padding: 25px 0;
+    }
+    .banner .image-placeholder {
+        width: 100%;
+    }
+
     .row, .contents .content-row {
         flex-wrap: wrap;
+        justify-content: center
+    }
+    .case-studies .case-study {
+        width: 100%;
+        display: none;
+    }
+    .case-studies .row {
+        padding: 0;
+    }
+    .case-studies .case-study .case-image {
+        display: none;
+    }
+    .case-studies .case-study .case-mobile-image {
+        display: block;
+    }
+    .case-studies .load-more h5 {
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-weight: 400;
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+
+    .sticky {
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        -webkit-perspective: 1000;
     }
 }
